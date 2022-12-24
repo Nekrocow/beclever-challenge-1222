@@ -1,0 +1,3 @@
+const average = (dateFrom, dateTo) => {
+
+}

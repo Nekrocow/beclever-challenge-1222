@@ -1,0 +1,23 @@
+{
+  "name": "beclever-challenge",
+  "version": "1.0.0",
+  "description": "Challenge for Beclever corp",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manuel A. Kloster",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "16.0.3",
+    "express": "4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.20"
+  }
+}
