@@ -1,14 +1,16 @@
 import { Router } from 'express'
 const router = Router()
-// import { getEntriesAndExits } from '../controllers/index.controller'
+import { getAllRegisters, postRegister } from '../controllers/registers.controller.js'
+import { getAllEmployees, postEmployee } from '../controllers/employees.controller.js'
 
-const getEntriesAndExits = () => 'todo'
+router.get('/registers', getAllRegisters)
 
-router
-  .get('/entrance', getEntriesAndExits)
-  .get('/:id')
-  .post('/')
-  .patch('/')
-  .delete('/:id')
+router.post('/registers', postRegister)
+
+router.get('/employees', getAllEmployees)
+
+router.post('/employees', postEmployee)
+
+
 
 export default router

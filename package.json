@@ -10,6 +10,8 @@
   "scripts": {
     "dev": "nodemon src/index.js",
     "start": "node src/index.js",
+    "dev:seed1": "node src/database/seeders/seedEmployees.js",
+    "dev:seed2": "node src/database/seeders/seedRegisters.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Manuel A. Kloster",
@@ -17,10 +19,10 @@
   "dependencies": {
     "dotenv": "16.0.3",
     "express": "4.18.2",
-    "morgan": "^1.10.0",
-    "pg": "^8.8.0",
-    "pg-hstore": "^2.3.4",
-    "sequelize": "^6.28.0"
+    "morgan": "1.10.0",
+    "pg": "8.8.0",
+    "pg-hstore": "2.3.4",
+    "sequelize": "6.28.0"
   },
   "devDependencies": {
     "nodemon": "2.0.20"

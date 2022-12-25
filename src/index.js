@@ -1,34 +1,22 @@
 import app from './app.js'
-
-app.listen(3001)
-console.log('Server listening on port', 3001)
-
-
-
-
-
-
-
-
-
-
-/*
-// require("dotenv").config()
-// const { connectDB } = require("./config/database")
+import { db } from './database/database.js'
+import dotenv from 'dotenv'
+dotenv.config()
+import { associations } from './database/associations.js'
 
 const PORT = process.env.PORT || 3001
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`)
-})
-
-/* el reemplazo debería ser algo así ---
 const startServer = async () => {
-
-connectDB()
-
-app.listen
+  try {
+    associations()
+    await db.sync({ force: false })
+    console.log('🚀 Connection has been established successfully!')
+    app.listen(PORT, () => {
+      console.log('👂🏼 Server is listening on port', PORT)
+    })
+  } catch (error) {
+    console.error('😔 Unable to connect to the database:', error)
+  }
 }
 
 startServer()
-*/

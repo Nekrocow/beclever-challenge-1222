@@ -1,9 +1,12 @@
 import Sequelize from 'sequelize'
+import dotenv from 'dotenv'
+dotenv.config()
+const { DB_USER, DB_PASSWORD, DB_NAME } = process.env
 
-export const sequelize = new Sequelize(
-  'beclever-db',
-  process.env.DB_USER,
-  process.env.DB_PASSWORD,
+export const db = new Sequelize(
+  DB_NAME,
+  DB_USER,
+  DB_PASSWORD,
   {
     host: 'localhost',
     dialect: 'postgres'
