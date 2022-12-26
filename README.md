@@ -24,7 +24,7 @@ npm run...
 "dev:seed2": seeds the database with Registers data [currently bugged]
 
 ## How to test endpoints:
-You will need either ThunderClient if using VSC or Postman to use the endpoints.
+You will need either ThunderClient if using VSC or Postman to use the endpoints. Default port is 3001.
 
 GET- http://localhost:{PORT}/api/employees
 
