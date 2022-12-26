@@ -11,6 +11,4 @@ router.get('/employees', getAllEmployees)
 
 router.post('/employees', postEmployee)
 
-
-
 export default router

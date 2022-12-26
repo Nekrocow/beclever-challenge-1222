@@ -5,34 +5,27 @@ const seedEmployees = async () => {
     const addEmployees = [
       {
         id: "aef5b4a0-9477-4002-b26c-1c24f1f9b3d1",
-        firstName: "Carlos",
-        lastName: "Estévez",
+        name: "Carlos Estévez",
         gender: 'male'
       },
       {
-        id: "d019698e-f2c1-42b2-82b5-0e53561446c5"
-        ,
-        firstName: "Sonia",
-        lastName: "Castillo",
+        id: "d019698e-f2c1-42b2-82b5-0e53561446c5",
+        name: "Sonia Castillo",
         gender: 'female'
       },
       {
         id: "d019698e-9477-4002-b26c-ce06be97bcad",
-        firstName: "Arturo",
-        lastName: "Estévez",
+        name: "Arturo Estévez",
         gender: 'male'
       },
       {
-        id: "aef5b4a0-f2c1-42b2-82b5-0e53561446c5"
-        ,
-        firstName: "Laura",
-        lastName: "Palmer",
+        id: "aef5b4a0-f2c1-42b2-82b5-0e53561446c5",
+        name: "Laura Palmer",
         gender: 'female'
       },
       {
         id: "f325d9f4-efa1-451c-b855-ce06be97bcad",
-        firstName: "Dino",
-        lastName: "Legna",
+        name: "Dino Legna",
         gender: 'male'
       }
     ]

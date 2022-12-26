@@ -9,16 +9,12 @@ export const Employee = db.define('employees', {
     allowNull: false,
     primaryKey: true
   },
-  firstName: {
-    type: DataTypes.STRING,
-    allowNull: false
-  },
-  lastName: {
+  name: {
     type: DataTypes.STRING,
     allowNull: false
   },
   gender: {    
-    type: DataTypes.ENUM(['male', 'female', 'other']),
+    type: DataTypes.ENUM(['male', 'female']),
     allowNull: false
   }  
 })
